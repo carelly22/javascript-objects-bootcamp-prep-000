@@ -6,3 +6,9 @@ playlist["Ariana Grande"] = "sweetener";
 function updatePlaylist(playlist, artistName, songTitle){
   return Object.assign(playlist, {[artistName]:songTitle});
 };
+
+//define a function that removes artists from the playlist object
+function removeFromPlaylist(playlist, artistName){
+  delete.playlist[artistName];
+  return playlist;
+}
